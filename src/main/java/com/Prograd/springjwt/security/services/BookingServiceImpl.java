@@ -34,6 +34,7 @@ public class BookingServiceImpl implements BookingService{
         existingBooking.setMobile(booking.getMobile());
         existingBooking.setDate(booking.getDate());
         existingBooking.setType(booking.getType());
+        existingBooking.setAmount(booking.getAmount());
 
 //        existingBooking.setStatus(booking.getStatus());
         bookingRepo.save(existingBooking);

@@ -35,6 +35,8 @@ public class Booking {
 
     @Column(name = "info", nullable = false)
     private String info;
+    @Column(name = "amount", nullable = false)
+    private String amount;
 
     @Column(name = "city", nullable = false)
     private String city;
@@ -104,6 +106,14 @@ public class Booking {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     public Booking() {
